@@ -26,7 +26,7 @@ Assumptions:
 2.I assumed the client requires the actual filtered graph with the node data and not only the routes themselves.
 3.I assumed I did not need to create a proper error manager for the purpose of this task.
 4.I could've merged the adjacency list and node data into a single Map where the key is the node id and the value is an object containing 2 fields: nodeData and the node's neighbors list.
-  For the limited use case of this task I've decided keeping them seperately is the correct and cleaner way but I might change my mind given a larger scope.
+For the limited use case of this task I've decided keeping them seperately is the correct and cleaner way but I might change my mind given a larger scope.
 5.I assumed I did not need to support environment variable beyond default ones for the purpose of the task.
 
 
