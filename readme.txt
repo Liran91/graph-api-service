@@ -3,7 +3,7 @@ Summary:
 On server init, the graph input data is loaded from the JSON file via Graph Manager, afterwards the node and edge data from the file is used to create a graph class with an adjacency list and a node data list.
 Once the graph is constructed we find all routes in the graph by running DFS on all nodes concurrently using Worker Threads. Afterwards the server is up and ready to handle API requests.
 The API server contains a single GET endpoint which returns a graph.The graph can be filtered using the 'filter' query param together with a valid supported filter value.
-Once a request to get the graph is made, we fetch the graph routes and nodesData and then filter the graph according to the filter type (if an invalid filter type was supplied the graph is returned unfiltered).
+Once a request to get the graph is made, we fetch the graph routes and nodesData and then filter the graph according to the filter type (if an no filter type was supplied the graph is returned unfiltered).
 Once the routes are filtered we generate a graph structure, that can be easy to render in a client side application by collecting all unique nodes in the routes and all the edges and returning them to the client.
 
 
